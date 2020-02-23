@@ -13,7 +13,57 @@
 		D0554F0624030D1F00264011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0554F0424030D1F00264011 /* Main.storyboard */; };
 		D0554F0824030D1F00264011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0554F0724030D1F00264011 /* Assets.xcassets */; };
 		D0554F0B24030D1F00264011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0554F0924030D1F00264011 /* LaunchScreen.storyboard */; };
+		D0554F1824030DB100264011 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0554F1624030DB100264011 /* Interface.storyboard */; };
+		D0554F1A24030DB100264011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0554F1924030DB100264011 /* Assets.xcassets */; };
+		D0554F2124030DB100264011 /* TestwatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0554F2024030DB100264011 /* TestwatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0554F2624030DB100264011 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0554F2524030DB100264011 /* InterfaceController.swift */; };
+		D0554F2824030DB100264011 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0554F2724030DB100264011 /* ExtensionDelegate.swift */; };
+		D0554F2A24030DB200264011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0554F2924030DB200264011 /* Assets.xcassets */; };
+		D0554F2E24030DB200264011 /* TestwatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0554F1424030DB000264011 /* TestwatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0554F3924031AA400264011 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0554F3724031AA400264011 /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0554F2224030DB100264011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0554EF324030D1F00264011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0554F1F24030DB100264011;
+			remoteInfo = "TestwatchOS Extension";
+		};
+		D0554F2C24030DB200264011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0554EF324030D1F00264011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0554F1324030DB000264011;
+			remoteInfo = TestwatchOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0554F3224030DB200264011 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0554F2124030DB100264011 /* TestwatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0554F3624030DB200264011 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0554F2E24030DB200264011 /* TestwatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D0554EFB24030D1F00264011 /* TestiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +74,27 @@
 		D0554F0724030D1F00264011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0554F0A24030D1F00264011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0554F0C24030D1F00264011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0554F1424030DB000264011 /* TestwatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0554F1724030DB100264011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D0554F1924030DB100264011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0554F1B24030DB100264011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0554F2024030DB100264011 /* TestwatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TestwatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0554F2524030DB100264011 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0554F2724030DB100264011 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D0554F2924030DB200264011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0554F2B24030DB200264011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0554F3824031AA400264011 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0554EF824030D1F00264011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0554F1D24030DB100264011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +107,10 @@
 		D0554EF224030D1F00264011 = {
 			isa = PBXGroup;
 			children = (
+				D0554F3724031AA400264011 /* TestModel.xcdatamodeld */,
 				D0554EFD24030D1F00264011 /* TestiOS */,
+				D0554F1524030DB000264011 /* TestwatchOS */,
+				D0554F2424030DB100264011 /* TestwatchOS Extension */,
 				D0554EFC24030D1F00264011 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				D0554EFB24030D1F00264011 /* TestiOS.app */,
+				D0554F1424030DB000264011 /* TestwatchOS.app */,
+				D0554F2024030DB100264011 /* TestwatchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +139,27 @@
 			path = TestiOS;
 			sourceTree = "<group>";
 		};
+		D0554F1524030DB000264011 /* TestwatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0554F1624030DB100264011 /* Interface.storyboard */,
+				D0554F1924030DB100264011 /* Assets.xcassets */,
+				D0554F1B24030DB100264011 /* Info.plist */,
+			);
+			path = TestwatchOS;
+			sourceTree = "<group>";
+		};
+		D0554F2424030DB100264011 /* TestwatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0554F2524030DB100264011 /* InterfaceController.swift */,
+				D0554F2724030DB100264011 /* ExtensionDelegate.swift */,
+				D0554F2924030DB200264011 /* Assets.xcassets */,
+				D0554F2B24030DB200264011 /* Info.plist */,
+			);
+			path = "TestwatchOS Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +170,51 @@
 				D0554EF724030D1F00264011 /* Sources */,
 				D0554EF824030D1F00264011 /* Frameworks */,
 				D0554EF924030D1F00264011 /* Resources */,
+				D0554F3624030DB200264011 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0554F2D24030DB200264011 /* PBXTargetDependency */,
 			);
 			name = TestiOS;
 			productName = TestiOS;
 			productReference = D0554EFB24030D1F00264011 /* TestiOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D0554F1324030DB000264011 /* TestwatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0554F3324030DB200264011 /* Build configuration list for PBXNativeTarget "TestwatchOS" */;
+			buildPhases = (
+				D0554F1224030DB000264011 /* Resources */,
+				D0554F3224030DB200264011 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0554F2324030DB100264011 /* PBXTargetDependency */,
+			);
+			name = TestwatchOS;
+			productName = TestwatchOS;
+			productReference = D0554F1424030DB000264011 /* TestwatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D0554F1F24030DB100264011 /* TestwatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0554F2F24030DB200264011 /* Build configuration list for PBXNativeTarget "TestwatchOS Extension" */;
+			buildPhases = (
+				D0554F1C24030DB100264011 /* Sources */,
+				D0554F1D24030DB100264011 /* Frameworks */,
+				D0554F1E24030DB100264011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestwatchOS Extension";
+			productName = "TestwatchOS Extension";
+			productReference = D0554F2024030DB100264011 /* TestwatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +227,12 @@
 				ORGANIZATIONNAME = Aleksandar;
 				TargetAttributes = {
 					D0554EFA24030D1F00264011 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D0554F1324030DB000264011 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D0554F1F24030DB100264011 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -116,6 +251,8 @@
 			projectRoot = "";
 			targets = (
 				D0554EFA24030D1F00264011 /* TestiOS */,
+				D0554F1324030DB000264011 /* TestwatchOS */,
+				D0554F1F24030DB100264011 /* TestwatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0554F1224030DB000264011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0554F1A24030DB100264011 /* Assets.xcassets in Resources */,
+				D0554F1824030DB100264011 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0554F1E24030DB100264011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0554F2A24030DB200264011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,10 +295,33 @@
 				D0554F0324030D1F00264011 /* ViewController.swift in Sources */,
 				D0554EFF24030D1F00264011 /* AppDelegate.swift in Sources */,
 				D0554F0124030D1F00264011 /* SceneDelegate.swift in Sources */,
+				D0554F3924031AA400264011 /* TestModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0554F1C24030DB100264011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0554F2824030DB100264011 /* ExtensionDelegate.swift in Sources */,
+				D0554F2624030DB100264011 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0554F2324030DB100264011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0554F1F24030DB100264011 /* TestwatchOS Extension */;
+			targetProxy = D0554F2224030DB100264011 /* PBXContainerItemProxy */;
+		};
+		D0554F2D24030DB200264011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0554F1324030DB000264011 /* TestwatchOS */;
+			targetProxy = D0554F2C24030DB200264011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0554F0424030D1F00264011 /* Main.storyboard */ = {
@@ -161,6 +338,14 @@
 				D0554F0A24030D1F00264011 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0554F1624030DB100264011 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0554F1724030DB100264011 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +499,84 @@
 			};
 			name = Release;
 		};
+		D0554F3024030DB200264011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TestwatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rs.vacic.dev.TestiOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D0554F3124030DB200264011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TestwatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rs.vacic.dev.TestiOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		D0554F3424030DB200264011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = TestwatchOS_Extension;
+				INFOPLIST_FILE = TestwatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = rs.vacic.dev.TestiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		D0554F3524030DB200264011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = TestwatchOS_Extension;
+				INFOPLIST_FILE = TestwatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = rs.vacic.dev.TestiOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,7 +598,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D0554F2F24030DB200264011 /* Build configuration list for PBXNativeTarget "TestwatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0554F3024030DB200264011 /* Debug */,
+				D0554F3124030DB200264011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0554F3324030DB200264011 /* Build configuration list for PBXNativeTarget "TestwatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0554F3424030DB200264011 /* Debug */,
+				D0554F3524030DB200264011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0554F3724031AA400264011 /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0554F3824031AA400264011 /* TestModel.xcdatamodel */,
+			);
+			currentVersion = D0554F3824031AA400264011 /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0554EF324030D1F00264011 /* Project object */;
 }
