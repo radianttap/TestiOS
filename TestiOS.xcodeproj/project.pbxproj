@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D03B879E24032E9A0082E129 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0554F3724031AA400264011 /* TestModel.xcdatamodeld */; };
 		D0554EFF24030D1F00264011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0554EFE24030D1F00264011 /* AppDelegate.swift */; };
 		D0554F0124030D1F00264011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0554F0024030D1F00264011 /* SceneDelegate.swift */; };
 		D0554F0324030D1F00264011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0554F0224030D1F00264011 /* ViewController.swift */; };
@@ -22,6 +21,7 @@
 		D0554F2A24030DB200264011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0554F2924030DB200264011 /* Assets.xcassets */; };
 		D0554F2E24030DB200264011 /* TestwatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0554F1424030DB000264011 /* TestwatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0554F3924031AA400264011 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0554F3724031AA400264011 /* TestModel.xcdatamodeld */; };
+		D075AC102403D91800CF398E /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0554F3724031AA400264011 /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03B879E24032E9A0082E129 /* TestModel.xcdatamodeld in Sources */,
+				D075AC102403D91800CF398E /* TestModel.xcdatamodeld in Sources */,
 				D0554F2824030DB100264011 /* ExtensionDelegate.swift in Sources */,
 				D0554F2624030DB100264011 /* InterfaceController.swift in Sources */,
 			);
