@@ -1,4 +1,4 @@
-## Xcode 11.4 b2
+## Xcode 11.4
 
 Error shown is:
 
